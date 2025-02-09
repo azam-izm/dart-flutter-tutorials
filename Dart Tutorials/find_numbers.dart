@@ -1,7 +1,7 @@
 import 'dart:math';
 
 void main() {
-  List<int> numbers = [5, 10, 4, 1, 13];
+  List<int> numbers = [10, 20, 30, 40, 50];  // Updated list of numbers
 
   // 1️⃣ Finding the Largest and Smallest Number
   int largest = numbers[0], smallest = numbers[0];
