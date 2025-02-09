@@ -1,7 +1,7 @@
 import 'dart:math';
 
 void main() {
-  List<int> numbers = [10, 20, 30, 40, 50];  // Updated list of numbers
+  List<int> numbers = [-100, 200, 40, 30, 50];  // Updated list of numbers
 
   // ================================================
   // 1️⃣ USING SORTING (Easiest approach)
