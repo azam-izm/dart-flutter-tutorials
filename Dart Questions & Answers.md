@@ -1,6 +1,6 @@
 Q1: What is the difference between .reduce and .fold in Dart?
 
-.reduce: Combines all elements of a non-empty collection into a single value using a function. Throws an error if the collection is empty.
+ANS: .reduce: Combines all elements of a non-empty collection into a single value using a function. Throws an error if the collection is empty.
 Example: listName.reduce((a, b) => a + b) → calculates the sum.
 
 .fold: Similar to .reduce, but allows you to provide an initial value and works on empty collections.
