@@ -4,7 +4,7 @@ ANS: .reduce: Combines all elements of a non-empty collection into a single valu
 Example: listName.reduce((a, b) => a + b) → calculates the sum.
 
 .fold: Similar to .reduce, but allows you to provide an initial value and works on empty collections.
-Example: listName.fold(0, (sum, n) => sum + n) → calculates the sum with a starting value of 0.
+Example: listName.fold(0, (a, b) => a + b) → calculates the sum with a starting value of 0.
 
 ===== Dart Questions & Answers =====
 
@@ -14,7 +14,7 @@ ANS: .reduce: Requires at least one element in the list to start the reduction p
 Example: emptyList.reduce((a, b) => a + b) → Throws an error for an empty list.
 
 .fold: Works with empty lists because it allows you to provide an initial value. If the list is empty, it simply returns the initial value without any errors.
-Example: emptyList.fold(0, (sum, n) => sum + n) → Returns 0 for an empty list.
+Example: emptyList.fold(0, (a, b) => a + b) → Returns 0 for an empty list.
 
 ===== Dart Questions & Answers =====
 
