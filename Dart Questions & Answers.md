@@ -7,6 +7,7 @@ Example: listName.reduce((a, b) => a + b) → calculates the sum.
 Example: listName.fold(0, (sum, n) => sum + n) → calculates the sum with a starting value of 0.
 
 ===== Dart Questions & Answers =====
+
 Q2: Why does .reduce not work with an empty list but .fold works perfectly?
 
 ANS: .reduce: Requires at least one element in the list to start the reduction process. If the list is empty, it throws a runtime error (Bad state: No element) because there’s nothing to reduce.
