@@ -31,6 +31,7 @@ Example: listName.reduce((a, b) => a + b) → calculates the sum.
 Q4: What is the difference between the .map() and .where() methods in Dart?
 
 .map(): Transforms every element into a new value.
+
 .where(): Filters elements based on a condition.
 
 ===== Dart Questions & Answers =====
