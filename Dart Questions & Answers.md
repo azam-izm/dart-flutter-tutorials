@@ -27,3 +27,9 @@ Example: listName.where((n) => n % 2 == 0) → filters even numbers.
 Example: listName.reduce((a, b) => a + b) → calculates the sum.
 
 ===== Dart Questions & Answers =====
+Q4: What is the difference between the .map() and .where() methods in Dart?
+
+.map(): Transforms every element into a new value.
+.where(): Filters elements based on a condition.
+
+===== Dart Questions & Answers =====
