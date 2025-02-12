@@ -20,6 +20,7 @@ Variable types can be categorized into four main parts based on different charac
 4. **Based on Mutability (Changeability of Values):**  
    - Mutable variables  
    - Immutable variables (`const` and `final`)
+
 Each of these categories defines how a variable behaves in terms of scope, accessibility, storage, and mutability.
    
 **===== Dart Questions & Answers =====** 
