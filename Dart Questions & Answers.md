@@ -5,16 +5,16 @@ Variable types can be categorized into five main parts based on different charac
 1. **Based on Scope (Where the Variable is Declared):**  
    - **Top-level variables:** Declared outside classes/functions, at the library level.  
    - **Class-level variables (Fields):** Declared within a class (either instance or static).
-   - **Local variables:** Declared inside a function, method, or code block.
+   - **Local variables:** Declared inside a function, method, or code blocks (e.g., loop variables).
    - **Parameter variables:** Function/method parameters (their scope is limited to the function body).  
 
 2. **Based on Access Control (Encapsulation):**  
-   - **Public variables:** Accessible from other libraries (no _ prefix).
-   - **Private variables:** Library-private (prefixed with _). 
+   - **Public variables:** Accessible from other libraries (no _ prefix, e.g., int age;).
+   - **Private variables:** Prefixed with _ (e.g., int _age;). These are library-private, not class-private.
 
 3. **Based on Memory Allocation (Instance vs. Class Variables):**  
-   - **Instance variables:** Belong to an object instance.
-   - **Static variables:** Belong to the class itself (static keyword).  
+   - **Instance variables:** Belong to an object instance (e.g., class Person { int age; } – age is instance-level).
+   - **Static variables:** Belong to the class itself (static keyword, e.g., static int count;).  
 
 4. **Based on Mutability (Changeability of Values):**  
    - **Mutable variables:** Can be reassigned (default).  
@@ -23,9 +23,9 @@ Variable types can be categorized into five main parts based on different charac
      • const: Compile-time constant.
 
 5. **Based on Initialization and Nullability**
-   - **Nullable variables:** Can hold null (e.g., int?).
+   - **Nullable variables:** Can hold null (e.g., int? age;).
    - **Non-nullable variables:** Must always hold a value (Dart's default with null safety).
-   - **late variables:** Non-nullable variables initialized after declaration.
+   - **late variables:** Non-nullable variables initialized after declaration (e.g., late String name;).
 
 Each of these categories defines how a variable behaves in terms of scope, accessibility, storage, mutability, initialization behavior and nullability.
    
