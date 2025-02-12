@@ -1,6 +1,6 @@
 **Q: What are the different types of variables?**  
 
-Variable types can be categorized into four main parts based on different characteristics:
+Variable types can be categorized into five main parts based on different characteristics:
 
 1. **Based on Scope (Where the Variable is Declared):**  
    - Top-level variables  
@@ -20,6 +20,8 @@ Variable types can be categorized into four main parts based on different charac
 4. **Based on Mutability (Changeability of Values):**  
    - Mutable variables  
    - Immutable variables (`const` and `final`)
+
+5. 
 
 Each of these categories defines how a variable behaves in terms of scope, accessibility, storage, and mutability.
    
