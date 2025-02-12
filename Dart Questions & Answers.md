@@ -3,28 +3,29 @@
 Variable types can be categorized into five main parts based on different characteristics:
 
 1. **Based on Scope (Where the Variable is Declared):**  
-   - Top-level variables  
-   - Class-level variables (Fields)  
-   - Local variables  
-   - Global variables  
-   - Parameter variables  
+   - **Top-level variables:** Declared outside classes/functions, at the library level.  
+   - **Class-level variables (Fields):** Declared within a class (either instance or static).
+   - **Local variables:** Declared inside a function, method, or code block.
+   - **Parameter variables:** Function/method parameters (their scope is limited to the function body).  
 
 2. **Based on Access Control (Encapsulation):**  
-   - Public variables  
-   - Private variables  
+   - **Public variables:** Accessible from other libraries (no _ prefix).
+   - **Private variables:** Library-private (prefixed with _). 
 
 3. **Based on Memory Allocation (Instance vs. Class Variables):**  
-   - Instance variables  
-   - Static variables  
+   - **Instance variables:** Belong to an object instance.
+   - **Static variables:** Belong to the class itself (static keyword).  
 
 4. **Based on Mutability (Changeability of Values):**  
-   - Mutable variables  
-   - Immutable variables (`const` and `final`)
+   - **Mutable variables:** Can be reassigned (default).  
+   - **Immutable variables:**
+     • final: Set once (runtime constant).
+     • const: Compile-time constant.
 
 5. **Based on Initialization and Nullability**
-   - Nullable variables
-   - Non-nullable variables
-   - late variables
+   - **Nullable variables:** Can hold null (e.g., int?).
+   - **Non-nullable variables:** Must always hold a value (Dart's default with null safety).
+   - **late variables:** Non-nullable variables initialized after declaration.
 
 Each of these categories defines how a variable behaves in terms of scope, accessibility, storage, mutability, initialization behavior and nullability.
    
