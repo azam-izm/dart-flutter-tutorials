@@ -21,9 +21,12 @@ Variable types can be categorized into five main parts based on different charac
    - Mutable variables  
    - Immutable variables (`const` and `final`)
 
-5. 
+5. **Based on Initialization and Nullability**
+   - Nullable variables
+   - Non-nullable variables
+   - late variables
 
-Each of these categories defines how a variable behaves in terms of scope, accessibility, storage, and mutability.
+Each of these categories defines how a variable behaves in terms of scope, accessibility, storage, mutability, initialization behavior and nullability.
    
 **===== Dart Questions & Answers =====** 
 
