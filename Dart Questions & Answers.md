@@ -1,4 +1,4 @@
-**Q: What are the different types of variables?**
+**Q: What are the different types of variables?**  
 Variable types can be categorized into four main parts based on different characteristics:
 1. **Based on Scope (Where the Variable is Declared):**  
    - Top-level variables  
