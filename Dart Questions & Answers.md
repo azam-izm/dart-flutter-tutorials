@@ -18,9 +18,10 @@ Variable types can be categorized into five main parts based on different charac
 
 4. **Based on Mutability (Changeability of Values):**  
    - **Mutable variables:** Can be reassigned (default).  
-   - **Immutable variables:**
-    • **final**: Set once (runtime constant).  
-    • **const**: Compile-time constant.
+   - **Immutable variables:**  
+   • **final**: Set once (runtime constant).  
+   • **const**: Compile-time constant.
+
 
 5. **Based on Initialization and Nullability**
    - **Nullable variables:** Can hold null (e.g., int? age;).
