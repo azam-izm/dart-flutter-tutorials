@@ -1,26 +1,26 @@
 Q1: What are the different types of variables?
 
-1. Based on Scope (Where the Variable is Declared)
-Top-level variables
-Class-level variables (Fields)
-Local variables
-Global variables
-Parameter variables
+1. Based on Scope (Where the Variable is Declared):
+•Top-level variables
+•Class-level variables (Fields)
+•Local variables
+•Global variables
+•Parameter variables
 
 
 2. Based on Access Control (Encapsulation)
-Public variables
-Private variables
+•Public variables
+•Private variables
 
 
 3. Based on Memory Allocation (Instance vs. Class Variables)
-Instance variables
-Static variables
+•Instance variables
+•Static variables
 
 
 4. Based on Mutability (Changeability of Values)
-Mutable variables
-Immutable variables (const and final)
+•Mutable variables
+•Immutable variables (const and final)
 
 
 Each of these categories defines how a variable behaves in terms of scope, accessibility, storage, and mutability.
