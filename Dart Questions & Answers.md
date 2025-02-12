@@ -8,17 +8,17 @@ Q1: What are the different types of variables?
 •Parameter variables
 
 
-2. Based on Access Control (Encapsulation)
+2. Based on Access Control (Encapsulation):
 •Public variables
 •Private variables
 
 
-3. Based on Memory Allocation (Instance vs. Class Variables)
+3. Based on Memory Allocation (Instance vs. Class Variables):
 •Instance variables
 •Static variables
 
 
-4. Based on Mutability (Changeability of Values)
+4. Based on Mutability (Changeability of Values):
 •Mutable variables
 •Immutable variables (const and final)
 
