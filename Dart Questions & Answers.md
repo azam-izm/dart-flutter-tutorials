@@ -70,3 +70,9 @@ Example: listName.reduce((a, b) => a + b) → calculates the sum.
 **.where():** Filters elements based on a condition.
 
 **===== Dart Questions & Answers =====** 
+
+**Q: How does Dart handle string repetition using the * operator, and why does it work only when the string is on the left?**
+
+In Dart, a string can be repeated using the * operator when the left operand is a string and the right operand is an integer. This means that the string will be repeated n times, where n is the integer value. **void main() {for (int i = 1; i <= 6; i++) print('$i' * i);}**
+
+**===== Dart Questions & Answers =====** 
