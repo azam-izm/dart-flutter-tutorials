@@ -1,4 +1,4 @@
-/**
+/*
  * Solar System Simulation with Flutter
  *
  * This Flutter application simulates a simplified solar system where the Sun remains stationary at the center of the screen,
