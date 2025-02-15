@@ -14,7 +14,7 @@ void main() {
     } else if (element is String) {
       return int.tryParse(element) !=
           null; // If an element is a string, check if it can be converted to an integer using `int.tryParse()`.
-    } //If `int.tryParse()` is not null, it means the string is a valid integer, so keep it. Otherwise, discard the element.
+    } //If `int.tryParse()` is not null, it means the string is a valid integer, so keep it. Otherwise, discard the element. (NOTE: return expects only boolean value here, and != null returns either true or false)
     return false; // Ignore everything else
   }).map((element) {
     if (element is int) {
