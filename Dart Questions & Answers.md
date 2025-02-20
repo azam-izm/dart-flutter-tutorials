@@ -1,34 +1,34 @@
-**Q:Do for, for-in, and forEach return anything in Dart?**
+**Q: Do for, for-in, and forEach return anything in Dart?**
 
 ❌ No, all three return void and do not produce a value.
 
 **===== Dart Questions & Answers =====**
 
-**Q:Is forEach a method or a statement?**
+**Q: Is forEach a method or a statement?**
 
- forEach is a method that belongs to the Iterable class and is used to iterate over elements.
+forEach is a method that belongs to the Iterable class and is used to iterate over elements.
  
 **===== Dart Questions & Answers =====**
 
-**Q:Are for and for-in methods?**
+**Q: Are for and for-in methods?**
 
 No, for and for-in are control flow statements and not methods, as they are built into Dart's syntax.
 
 **===== Dart Questions & Answers =====**
 
-**Q:How to recognize a function in Dart?**
+**Q: How to recognize a function in Dart?**
 
 A function has a return type, a name (unless anonymous), parentheses () for parameters, and a body {} or => for expressions.
 
 **===== Dart Questions & Answers =====**
 
-**Q:Does everything with parentheses () mean it's a function?**
+**Q: Does everything with parentheses () mean it's a function?**
 
  No, parentheses can also be used in method calls, constructor calls, and function variables, so not everything with () is a function.
  
  **===== Dart Questions & Answers =====**
  
-**Q:What’s the key difference between for, for-in, and forEach?**
+**Q: What’s the key difference between for, for-in, and forEach?**
 
 The for loop is a general-purpose control flow statement that allows full control over iteration, including using break and continue. The for-in loop is a simpler way to iterate over collections but still supports break and continue. The forEach method, on the other hand, is a built-in method of Iterable, requires an object to be called on, and does not support break or continue, making it less flexible than the other two loops.
 
