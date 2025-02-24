@@ -1,3 +1,8 @@
+**Q: Why do we create custom constructors?**
+To define specific initialization logic and control object creation.
+
+**===== Dart Questions & Answers =====**
+
 **Q: Do for, for-in, and forEach return anything in Dart?**
 
 ❌ No, all three return void and do not produce a value.
