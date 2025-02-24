@@ -1,3 +1,9 @@
+**Q: What is shadowing in Dart?**
+
+Shadowing is when a variable declared in an inner scope has the same name as one in an outer scope, causing the inner one to hide the outer.
+
+**===== Dart Questions & Answers =====**
+
 **Q: Why do we create custom constructors?**
 
 To define specific initialization logic and control object creation.
