@@ -1,3 +1,9 @@
+**Q: What is the purpose of using model classes in Dart?**
+
+Model classes are used in Dart to represent data in a structured and type-safe way, making the code more readable, maintainable, and error-free.
+
+**===== Dart Questions & Answers =====**
+
 **Q: What is shadowing in Dart?**
 
 Shadowing is when a variable declared in an inner scope has the same name as one in an outer scope, causing the inner one to hide the outer.
