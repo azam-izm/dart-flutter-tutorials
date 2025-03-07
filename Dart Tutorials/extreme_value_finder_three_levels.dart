@@ -52,9 +52,7 @@ void main() {
     } else if (num > loopSecondLargest && num != loopLargest) {
       loopThirdLargest = loopSecondLargest;
       loopSecondLargest = num;
-    } else if (num > loopThirdLargest &&
-        num != loopSecondLargest &&
-        num != loopLargest) {
+    } else if (num > loopThirdLargest && num != loopSecondLargest && num != loopLargest) {
       loopThirdLargest = num;
     }
 
@@ -66,9 +64,7 @@ void main() {
     } else if (num < loopSecondSmallest && num != loopSmallest) {
       loopThirdSmallest = loopSecondSmallest;
       loopSecondSmallest = num;
-    } else if (num < loopThirdSmallest &&
-        num != loopSecondSmallest &&
-        num != loopSmallest) {
+    } else if (num < loopThirdSmallest && num != loopSecondSmallest && num != loopSmallest) {
       loopThirdSmallest = num;
     }
   }
