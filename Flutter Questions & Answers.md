@@ -10,7 +10,10 @@ routes: {
 ```
 
 **===== Flutter Questions & Answers =====**
+
 **Q: What does GetX provide in Flutter, and what are its core features?**
 
 
 GetX is a Flutter package that provides state management, route management, and dependency injection, offering reactive programming, easy navigation, and efficient handling of app states with minimal boilerplate code.
+
+**===== Flutter Questions & Answers =====**
