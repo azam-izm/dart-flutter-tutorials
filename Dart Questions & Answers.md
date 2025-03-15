@@ -1,3 +1,33 @@
+**Q: What is the purpose of the copyWith method in Dart/Flutter?**
+
+It creates a new object with modified properties while keeping other values unchanged, ensuring immutability.
+
+```
+class User {
+  final String name;
+  final int age;
+
+  User({required this.name, required this.age});
+
+  User copyWith({String? name, int? age}) {
+    return User(
+      name: name ?? this.name,
+      age: age ?? this.age,
+    );
+  }
+}
+
+void main() {
+  var user1 = User(name: "Alice", age: 25);
+  var user2 = user1.copyWith(age: 26); // Creates a new object with updated age
+
+  print(user2.name); // Alice
+  print(user2.age);  // 26
+}
+```
+
+**===== Dart Questions & Answers =====**
+
 **Q: What is the purpose of using model classes in Dart?**
 
 Model classes are used in Dart to represent data in a structured and type-safe way, making the code more readable, maintainable, and error-free.
