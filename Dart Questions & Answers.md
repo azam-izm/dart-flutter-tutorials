@@ -18,10 +18,10 @@ class User {
 }
 
 void main() {
-  var user1 = User(name: "Alice", age: 25);
+  var user1 = User(name: "Ali", age: 25);
   var user2 = user1.copyWith(age: 26); // Creates a new object with updated age
 
-  print(user2.name); // Alice
+  print(user2.name); // Ali
   print(user2.age);  // 26
 }
 ```
