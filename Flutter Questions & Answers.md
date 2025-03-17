@@ -1,3 +1,13 @@
+**Q: Why does Flutter throw an error when adding a nested list inside children: in widgets like Column, Row, or Stack?**
+
+Widgets like Column, Row, and Stack expect a flat list of widgets, but a nested list (List<List<Widget>>) causes a type mismatch.
+
+🔧 Fix: Use the spread operator (...) to unpack lists inside children: or assign a generated list directly.
+
+This rule applies to all collection-based widgets in Flutter, including ListView, Wrap, and GridView.
+
+**===== Flutter Questions & Answers =====**
+
 **Q: How can I set up routes in MaterialApp without using initialRoute or home?**
 
 Use the routes property to map each screen to a named route, like this:
