@@ -1,3 +1,32 @@
+**Q: What is the difference between BlocBuilder and BlocListener in Flutter's BLoC package?**
+
+BlocBuilder: Always returns a widget and rebuilds the UI when the state changes.
+
+BlocListener: Never returns a widget; it only executes side effects (e.g., showing a SnackBar or navigating) without affecting the UI.
+
+```
+// UI update using BlocBuilder
+BlocBuilder<CounterBloc, int>(
+  builder: (context, state) {
+    return Text('Count: $state'); // Always returns a widget
+  },
+);
+
+// Side effect using BlocListener
+BlocListener<CounterBloc, int>(
+  listener: (context, state) {
+    if (state == 5) {
+      // Executes a side effect, never returns a widget
+      ScaffoldMessenger.of(context).showSnackBar(
+        SnackBar(content: Text('Count reached 5!')),
+      );
+    }
+  },
+  child: Container(), // A child widget can be provided
+);
+```
+**===== Flutter Questions & Answers =====**
+
 **Q: Why does Flutter throw an error when adding a nested list inside children: in widgets like Column, Row, or Stack?**
 
 Widgets like Column, Row, and Stack expect a flat list of widgets, but a nested list (List<List<Widget>>) causes a type mismatch. Use the spread operator (...) to unpack lists inside children: or assign a generated list directly. This rule applies to all collection-based widgets in Flutter, including ListView, Wrap, and GridView.
