@@ -1,3 +1,20 @@
+**Q: In Flutter BLoC, which widgets are used to interact with the state in the UI?**
+
+1. BlocBuilder → Rebuilds UI when the state changes.
+
+
+2. BlocListener → Listens for state changes and triggers side effects (e.g., Snackbar).
+
+
+3. BlocConsumer → A combination of BlocListener and BlocBuilder (listens + rebuilds).
+
+
+4. BlocSelector → Selects and listens to a specific part of the state, optimizing rebuilds.
+
+Most commonly, developers use BlocBuilder, BlocListener, and BlocConsumer, but BlocSelector is also an important tool for improving performance.
+
+**===== Flutter Questions & Answers =====**
+
 **Q: What is the difference between BlocBuilder and BlocListener in Flutter's BLoC package?**
 
 BlocBuilder: Always returns a widget and rebuilds the UI when the state changes.
