@@ -11,6 +11,18 @@ void main() {
   print('Original: $original'); //Original: hello
   print('Reversed: ${reverseString(original)}'); //Reversed: olleh
 }
+```
+How can we reverse an integer in Dart?
+```
+int reverseInteger(int num) {
+  return int.parse(num.toString().split('').reversed.join());
+}
+
+void main() {
+  int original = 12345;
+  print('Original: $original'); // Original: 12345
+  print('Reversed: ${reverseInteger(original)}'); // Reversed: 54321
+}
 
 ```
 This splits the string into a list of characters, reverses the list, and joins it back into a string.
