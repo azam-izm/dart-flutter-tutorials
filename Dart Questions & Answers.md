@@ -1,3 +1,13 @@
+**Q: How can we reverse a string in Dart?**
+
+In Dart, we can reverse a string using the following one-liner:
+```
+str.split('').reversed.join();
+```
+This splits the string into a list of characters, reverses the list, and joins it back into a string.
+
+**===== Dart Questions & Answers =====**
+
 **Q: What is the purpose of the copyWith method in Dart/Flutter?**
 
 It creates a new object with modified properties while keeping other values unchanged, ensuring immutability.
