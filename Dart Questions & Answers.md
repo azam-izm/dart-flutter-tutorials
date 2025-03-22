@@ -4,11 +4,11 @@ The purpose of abs() is to return the positive equivalent of a number, regardles
 ```
 void main() {
   int negativeNumber = -5;
-  int positiveNumber = 10;
-  
+  double positiveNumber = 10.5;
+
   // Get the absolute value
   print(negativeNumber.abs()); // Output: 5
-  print(positiveNumber.abs()); // Output: 10
+  print(positiveNumber.abs()); // Output: 10.5
 }
 ```
 **===== Dart Questions & Answers =====**
