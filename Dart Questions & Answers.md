@@ -1,3 +1,18 @@
+**Q: What is the purpose of the abs() method in Dart, and how is it used?**
+
+The purpose of abs() is to return the positive equivalent of a number, regardless of whether the original number is positive or negative. This method is available for both int and double types in Dart.
+```
+void main() {
+  int negativeNumber = -5;
+  int positiveNumber = 10;
+  
+  // Get the absolute value
+  print(negativeNumber.abs()); // Output: 5
+  print(positiveNumber.abs()); // Output: 10
+}
+```
+**===== Dart Questions & Answers =====**
+
 **Q: How can we reverse a string in Dart?**
 
 In Dart, we can reverse a string using ```stringName.split('').reversed.join();```
