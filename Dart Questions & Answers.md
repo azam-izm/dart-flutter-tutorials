@@ -1,6 +1,6 @@
 **Q: How can we reverse a string in Dart?**
 
-In Dart, we can reverse a string using the following one-liner:
+In Dart, we can reverse a string using ```stringName.split('').reversed.join();```
 ```
 stringName.split('').reversed.join();
 ```
