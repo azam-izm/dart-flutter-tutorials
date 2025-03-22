@@ -2,7 +2,16 @@
 
 In Dart, we can reverse a string using ```stringName.split('').reversed.join();```
 ```
-stringName.split('').reversed.join();
+String reverseString(String str) {
+  return str.split('').reversed.join();
+}
+
+void main() {
+  String original = "hello";
+  print('Original: $original'); //Original: hello
+  print('Reversed: ${reverseString(original)}'); //Reversed: olleh
+}
+
 ```
 This splits the string into a list of characters, reverses the list, and joins it back into a string.
 
