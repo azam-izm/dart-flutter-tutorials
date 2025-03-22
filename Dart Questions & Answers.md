@@ -2,7 +2,7 @@
 
 In Dart, we can reverse a string using the following one-liner:
 ```
-str.split('').reversed.join();
+stringName.split('').reversed.join();
 ```
 This splits the string into a list of characters, reverses the list, and joins it back into a string.
 
