@@ -27,7 +27,7 @@ void main() {
   print('Reversed: ${reverseString(original)}'); //Reversed: olleh
 }
 ```
-How can we reverse an integer in Dart?
+How can we reverse an integer in Dart? ```int.parse(stringName.toString().split('').reversed.join());```
 ```
 int reverseInteger(int num) {
   return int.parse(num.toString().split('').reversed.join());
@@ -39,7 +39,7 @@ void main() {
   print('Reversed: ${reverseInteger(original)}'); // Reversed: 54321
 }
 ```
-Reversing an Integer in Dart with Handling for Negative Numbers
+How to Reverse an Integer in Dart and Handle Negative Numbers? ```int.parse(stringName.abs().toString().split('').reversed.join());```
 ```
 int reverseInteger(int num) {
   bool isNegative = num < 0; // Check if number is negative
