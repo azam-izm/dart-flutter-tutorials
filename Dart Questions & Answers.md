@@ -38,7 +38,22 @@ void main() {
   print('Original: $original'); // Original: 12345
   print('Reversed: ${reverseInteger(original)}'); // Reversed: 54321
 }
+```
+Reversing an Integer in Dart with Handling for Negative Numbers
+```
+int reverseInteger(int num) {
+  bool isNegative = num < 0; // Check if number is negative
+  int reversed = int.parse(num.abs().toString().split('').reversed.join());
+  return isNegative
+      ? -reversed
+      : reversed; // Reapply the negative sign if needed
+}
 
+void main() {
+  int original = -12345;
+  print('Original: $original'); // Original: -12345
+  print('Reversed: ${reverseInteger(original)}'); // Reversed: -54321
+}
 ```
 This splits the string into a list of characters, reverses the list, and joins it back into a string.
 
