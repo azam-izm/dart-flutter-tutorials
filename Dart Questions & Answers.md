@@ -1,6 +1,6 @@
 **Q: What is dependency injection in Flutter state management?**
 
-Providing a class (dependency) to another class instead of creating it inside, making code more manageable, testable, and reusable.
+Providing (injecting) a class (dependency) to another class instead of creating it inside, making code more manageable, testable, and reusable.
 
 Example using Provider:
 ```
