@@ -1,3 +1,32 @@
+**Q: What is dependency injection in Flutter state management?**
+
+Providing a class (dependency) to another class instead of creating it inside, making code more manageable, testable, and reusable.
+
+Example using Provider:
+```
+void main() {
+  runApp(
+    Provider(create: (_) => Counter(), child: MyApp()),
+  );
+}
+
+class Counter {
+  int value = 0;
+  void increment() => value++;
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final counter = Provider.of<Counter>(context);
+    return Text('Value: ${counter.value}');
+  }
+}
+```
+Here, Counter is injected using Provider, so we don’t create it inside MyApp.
+
+**===== Dart Questions & Answers =====**
+
 **Q: What is the purpose of the abs() method in Dart, and how is it used?**
 
 The purpose of abs() is to return the positive equivalent of a number, regardless of whether the original number is positive or negative. This method is available for both int and double types in Dart.
