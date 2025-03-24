@@ -23,6 +23,8 @@ class MyApp extends StatelessWidget {
   }
 }
 ```
+Here, Counter is injected using Provider, so we don’t create it inside MyApp.
+
 Another Example :
 ```
 class Engine {
@@ -49,7 +51,6 @@ void main() {
   car.drive();
 }
 ```
-Here, Counter is injected using Provider, so we don’t create it inside MyApp.
 
 **===== Dart Questions & Answers =====**
 
