@@ -23,6 +23,32 @@ class MyApp extends StatelessWidget {
   }
 }
 ```
+Another Example :
+```
+class Engine {
+  void start() {
+    print("Engine started");
+  }
+}
+
+class Car {
+  final Engine engine; // Injecting Engine into Car
+
+  Car(this.engine);
+
+  void drive() {
+    engine.start();
+    print("Car is moving");
+  }
+}
+
+void main() {
+  var engine = Engine(); // Creating dependency
+  var car = Car(engine); // Injecting dependency
+
+  car.drive();
+}
+```
 Here, Counter is injected using Provider, so we don’t create it inside MyApp.
 
 **===== Dart Questions & Answers =====**
