@@ -1,4 +1,5 @@
 **Q: What is the difference between onSubmitted and TextEditingController in Flutter, and when should each be used?**
+Controllers allow direct access to input values.  Without a controller, we’d need to store the text manually on every change, making it less efficient.
 
 onSubmitted:
 ```
