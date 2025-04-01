@@ -1,6 +1,6 @@
 **Q: What is the correct structure for using extends, with, and implements in Dart, including all combinations and cases?**
 
-In Dart, you can use extends, with, and implements to create class hierarchies and mix in behaviors. Here are the different combinations:
+In Dart, when using extends, with, and implements, the correct order is: extends comes first (if inheriting from a superclass), with is prioritized next (for mixing in additional behavior), and implements comes last (for implementing interfaces). Here are the different combinations:
 ```
 class Vehicle extends Machine with M1, M2 {}  
 
