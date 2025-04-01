@@ -1,3 +1,25 @@
+**Q: Why can't we use a ListView directly inside a Column in Flutter?**
+
+A ListView expects height constraints, but a Column doesn't provide them, leading to an unbounded height error. Wrapping the ListView with Expanded or Flexible provides the necessary constraints.
+
+```
+Column(
+  children: [
+    Text('Header'),
+    Expanded(
+      child: ListView.builder(
+        itemCount: 20,
+        itemBuilder: (context, index) {
+          return ListTile(title: Text('Item $index'));
+        },
+      ),
+    ),
+  ],
+)
+```
+
+**===== Dart Questions & Answers =====**
+
 **Q: What is the correct structure for using extends, with, and implements in Dart, including all combinations and cases?**
 
 In Dart, when using extends, with, and implements, the correct order is: extends comes first (if inheriting from a superclass), with is prioritized next (for mixing in additional behavior), and implements comes last (for implementing interfaces). Here are the different combinations:
