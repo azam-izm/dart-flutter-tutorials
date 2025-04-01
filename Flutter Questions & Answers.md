@@ -2,22 +2,27 @@
 
 onSubmitted:
 ```
-onSubmitted is a callback function triggered when the user presses the "done" or "submit" button on the keyboard.
+onSubmitted is a callback function triggered when the user presses the "done"
+or "submit" button on the keyboard.
 
-It provides the input value at that moment, typically used for form submissions or actions triggered by user input.
+It provides the input value at that moment, typically used for form submissions
+or actions triggered by user input.
 ```
 
 TextEditingController: 
 ```
-TextEditingController is an object that manages and tracks the current value of a TextField in real-time.
+TextEditingController is an object that manages and tracks the current value of
+a TextField in real-time.
 
-It allows you to access and modify the TextField value programmatically, providing more control and flexibility.
+It allows you to access and modify the TextField value programmatically, providing
+more control and flexibility.
 ```
 Use Cases:
 ```
 Use onSubmitted for handling specific actions when the user submits input, like submitting a form.
 
-Use TextEditingController for real-time input management and more complex scenarios requiring programmatic control over text fields.
+Use TextEditingController for real-time input management and more complex scenarios requiring
+programmatic control over text fields.
 ```
 
 
