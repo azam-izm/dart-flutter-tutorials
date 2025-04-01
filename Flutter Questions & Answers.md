@@ -1,4 +1,27 @@
-**Q: Why can't we use a ListView directly inside a Column in Flutter?**
+**Q: What is the difference between onSubmitted and TextEditingController in Flutter, and when should each be used?**
+
+onSubmitted:
+```
+onSubmitted is a callback function triggered when the user presses the "done" or "submit" button on the keyboard.
+
+It provides the input value at that moment, typically used for form submissions or actions triggered by user input.
+```
+
+TextEditingController: 
+```
+TextEditingController is an object that manages and tracks the current value of a TextField in real-time.
+
+It allows you to access and modify the TextField value programmatically, providing more control and flexibility.
+```
+Use Cases:
+```
+Use onSubmitted for handling specific actions when the user submits input, like submitting a form.
+
+Use TextEditingController for real-time input management and more complex scenarios requiring programmatic control over text fields.
+```
+
+
+**===== Flutter Questions & Answers =====****Q: Why can't we use a ListView directly inside a Column in Flutter?**
 
 A ListView expects height constraints, but a Column doesn't provide them, leading to an unbounded height error. Wrapping the ListView with Expanded or Flexible provides the necessary constraints.
 
