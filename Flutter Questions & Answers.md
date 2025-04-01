@@ -1,3 +1,25 @@
+**Q: Why can't we use a ListView directly inside a Column in Flutter?**
+
+A ListView expects height constraints, but a Column doesn't provide them, leading to an unbounded height error. Wrapping the ListView with Expanded or Flexible provides the necessary constraints.
+
+```
+Column(
+  children: [
+    Text('Header'),
+    Expanded(
+      child: ListView.builder(
+        itemCount: 20,
+        itemBuilder: (context, index) {
+          return ListTile(title: Text('Item $index'));
+        },
+      ),
+    ),
+  ],
+)
+```
+
+**===== Flutter Questions & Answers =====**
+
 **Q: In Flutter BLoC, which widgets are used to interact with the state in the UI?**
 
 1. BlocBuilder → Rebuilds UI when the state changes.
