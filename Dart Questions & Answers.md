@@ -1,3 +1,17 @@
+**Q: What is the correct structure for using extends, with, and implements in Dart, including all combinations and cases?**
+
+In Dart, you can use extends, with, and implements to create class hierarchies and mix in behaviors. Here are the different combinations:
+```
+class Vehicle extends Machine with M1, M2 {}  
+
+class Vehicle extends Machine implements I1, I2 {}  
+
+class Vehicle extends Machine with M1, M2 implements I1, I2 {}  
+
+class Vehicle with M1, M2 implements I1, I2 {}
+```
+**===== Dart Questions & Answers =====**
+
 **Q: What is dependency injection in Flutter state management?**
 
 Providing (injecting) a class (dependency) to another class instead of creating it inside, making code more manageable, testable, and reusable.
