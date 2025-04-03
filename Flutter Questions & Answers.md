@@ -5,8 +5,8 @@ No, Get.put(ControllerClassName) is used for dependency injection, while context
 ```
 Get.put is for registering and injecting dependencies globally.
 
-context.read and context.watch (Provider) or ref.read and ref.watch (Riverpod) are for reading and listening
-to state changes, but they are used differently.
+context.read and context.watch (Provider) or ref.read and ref.watch (Riverpod) are for reading and
+listening to state changes, but they are used differently.
 ```
 
 **===== Flutter Questions & Answers =====**
@@ -70,7 +70,9 @@ programmatic control over text fields.
 ```
 
 
-**===== Flutter Questions & Answers =====****Q: Why can't we use a ListView directly inside a Column in Flutter?**
+**===== Flutter Questions & Answers =====**
+
+**Q: Why can't we use a ListView directly inside a Column in Flutter?**
 
 A ListView expects height constraints, but a Column doesn't provide them, leading to an unbounded height error. Wrapping the ListView with Expanded or Flexible provides the necessary constraints.
 
