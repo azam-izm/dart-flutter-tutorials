@@ -204,12 +204,14 @@ Bloc (Business Logic Component) provides a predictable state management solution
 Dependency Injection:
 ```
 Provider and GetX provide built-in dependency injection features.
-Riverpod and Bloc do not offer direct dependency injection; you can manage state but need external solutions for DI.
+Riverpod and Bloc do not offer direct dependency injection; you can manage state but need external
+solutions for DI.
 ```
 Routing:
 ```
 GetX has built-in routing capabilities for easy navigation.
-Provider, Riverpod, and Bloc do not handle routing and rely on Flutter's default Navigator or external routing libraries.
+Provider, Riverpod, and Bloc do not handle routing and rely on Flutter's default Navigator or
+external routing libraries.
 ```
 
 **===== Flutter Questions & Answers =====**
