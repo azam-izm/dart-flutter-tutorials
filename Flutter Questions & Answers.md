@@ -10,6 +10,9 @@ Consumer<MyProvider>(
     return Text(myProvider.someState); // OR  Text(context.watch<MyProvider>().someState); 
   },
 );
+
+In Provider, you can access the state using context.read() or context.watch(). In contrast,
+Riverpod requires the use of ref.watch() or ref.read() to manage the state.
 ```
 
 In Riverpod:
