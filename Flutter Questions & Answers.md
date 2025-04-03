@@ -1,6 +1,26 @@
 **Q: Why is it not allowed to specify type parameters (generics) in Riverpod’s ConsumerWidget, but necessary in Provider?**
 
+Providers require generics to define the data type they hold for type safety, while ConsumerWidget doesn’t need them because it infers types directly from the provider via ref.watch/ref.read, avoiding redundancy since the provider (source of truth) already enforces the type.
 
+In Provider:
+```
+Consumer<MyProvider>(
+  builder: (context, myProvider, child) {
+    // Access the state from the provider
+    return Text(myProvider.someState);
+  },
+);
+```
+
+In Riverpod:
+```
+ConsumerWidget(
+  builder: (context, ref, child) {
+    final state = ref.watch(myProvider);
+    return Text(state);
+  },
+);
+```
 
 **===== Flutter Questions & Answers =====**
 
