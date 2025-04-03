@@ -1,3 +1,16 @@
+**Q: Does Get.put(ControllerClassName) in GetX work like context.read or context.watch in Provider, or ref.read or ref.watch in Riverpod?**
+
+No, Get.put(ControllerClassName) is used for dependency injection, while context.read, context.watch, ref.read, and ref.watch are used to access or listen to state within a specific scope or widget.
+
+```
+Get.put is for registering and injecting dependencies globally.
+
+context.read and context.watch (Provider) or ref.read and ref.watch (Riverpod) are for reading and listening
+to state changes, but they are used differently.
+```
+
+**===== Flutter Questions & Answers =====**
+
 **Q: Why is it not allowed to specify type parameters (generics) in Riverpod’s ConsumerWidget, but necessary in Provider?**
 
 Providers require generics to define the data type they hold for type safety, while ConsumerWidget doesn’t need them because it infers types directly from the provider via ref.watch/ref.read, avoiding redundancy since the provider (source of truth) already enforces the type.
