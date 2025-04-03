@@ -1,3 +1,9 @@
+**Q: Why is it not allowed to specify type parameters (generics) in Riverpod’s ConsumerWidget, but necessary in Provider?**
+
+
+
+**===== Flutter Questions & Answers =====**
+
 **Q: What is the difference between onSubmitted and TextEditingController in Flutter, and when should each be used?**
 
 Controllers allow direct access to input values.  Without a controller, we’d need to store the text manually on every change, making it less efficient.
