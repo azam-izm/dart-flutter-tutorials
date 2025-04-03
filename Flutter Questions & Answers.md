@@ -7,7 +7,7 @@ In Provider:
 Consumer<MyProvider>(
   builder: (context, myProvider, child) {
     // Access the state from the provider
-    return Text(myProvider.someState);
+    return Text(myProvider.someState); // OR  Text(context.watch<MyProvider>().someState); 
   },
 );
 ```
