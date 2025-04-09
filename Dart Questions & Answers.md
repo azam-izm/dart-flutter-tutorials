@@ -4,7 +4,8 @@ In Dart, a `final` variable can be declared without an initializer in a local sc
 ```
 void main() {
 final String greeting;
-greeting = "Hello, Dart!"; })
+greeting = "Hello, Dart!";
+})
 ```
 because Dart’s flow analysis ensures it’s assigned exactly once before use, making it valid and flexible for local logic. 
 
