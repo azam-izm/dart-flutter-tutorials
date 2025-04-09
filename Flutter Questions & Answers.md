@@ -1,3 +1,17 @@
+**Q: How can I initialize a BLoC in Flutter with an event to trigger an action immediately after creation, and what’s the proper syntax for doing so in a BlocProvider?**
+
+You can initialize a BLoC with an event using the cascade operator (..) in a BlocProvider. 
+For example:
+```
+BlocProvider<CounterBloc>(
+  create: (context) => CounterBloc()..add(IncrementEvent()),
+  child: MyWidget(),
+)
+```
+This creates the CounterBloc and immediately dispatches the IncrementEvent, triggering the associated logic (e.g., incrementing a counter) as soon as the BLoC is instantiated. Ensure your BLoC’s event handler is set up to process the event correctly.
+
+**===== Flutter Questions & Answers =====**
+
 **Q: Does Get.put(ControllerClassName) in GetX work like context.read or context.watch in Provider, or ref.read or ref.watch in Riverpod?**
 
 No, Get.put(ControllerClassName) is used for dependency injection, while context.read, context.watch, ref.read, and ref.watch are used to access or listen to state within a specific scope or widget.
