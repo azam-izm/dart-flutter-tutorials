@@ -1,3 +1,29 @@
+**Q: Why does declaring a final variable without an initializer work in a function but not as a class field in Dart, and how should it be handled in a class?**
+
+In Dart, a `final` variable can be declared without an initializer in a local scope (e.g., inside a function)
+```
+void main() {
+final String greeting;
+greeting = "Hello, Dart!"; })
+```
+because Dart’s flow analysis ensures it’s assigned exactly once before use, making it valid and flexible for local logic. 
+
+However, as a class field e.g., 
+```
+class Example {
+final String greeting;
+}
+
+it must be initialized at declaration e.g. 
+
+final String greeting = "Hello, Dart!";
+
+or in a constructor’s initializer list (e.g., Example() : greeting = "Hello, Dart!";)
+```
+because class fields lack the runtime flow analysis of functions and Dart enforces immutability at compile time. To handle it in a class, either provide an initializer or use the constructor’s initializer list; otherwise, you’d need late final if initialization is deferred but still occurs exactly once before access.
+
+**===== Dart Questions & Answers =====**
+
 **Q: What is the correct structure for using extends, with, and implements in Dart, including all combinations and cases?**
 
 In Dart, when using extends, with, and implements, the correct order is: extends comes first (if inheriting from a superclass), with is prioritized next (for mixing in additional behavior), and implements comes last (for implementing interfaces). Here are the different combinations:
