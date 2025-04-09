@@ -13,6 +13,7 @@ However, as a class field e.g.,
 ```
 class Example {
 final String greeting;
+greeting = "Hello, Dart!"; // Error!
 }
 
 it must be initialized at declaration e.g. 
