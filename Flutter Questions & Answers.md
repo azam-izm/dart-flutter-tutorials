@@ -1,7 +1,7 @@
 **Q: What is Equatable and what does it do?**
 
-**Equatable:** Value equality, compares objects by properties, not memory address.
-**Does:** Helps Bloc compare states, prevents unnecessary state emits, avoids redundant UI rebuilds.
+**Equatable:** Value equality, compares objects by properties, not memory address. <br>
+**Does:** Helps Bloc compare states, prevents unnecessary state emits, avoids redundant UI rebuilds. <br>
 **Keywords:** Value-based, equality, properties, Bloc helper, efficiency.
 
 **===== Flutter Questions & Answers =====**
