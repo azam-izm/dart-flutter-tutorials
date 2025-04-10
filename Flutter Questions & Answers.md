@@ -1,6 +1,6 @@
 **Q: How can a single event in a Flutter BLoC manage two state variables, like tracking a process and a counter, and display them in the UI?**
 
-A single event in a Flutter BLoC can manage two state variables by defining a state class with multiple fields—like `bool isProcessing` and `int actionCount`—and updating them in the event handler. For example, in an `AppBloc`, a `PerformActionEvent` can emit a new state with `isProcessing: true` and `actionCount` incremented, then later emit `isProcessing: false` after a delay, using `copyWith` to modify the `AppState`. The UI, via `BlocBuilder`, can display both simultaneously—showing a spinner when `isProcessing` is true and the updated `actionCount` as text—demonstrating how one event can control multiple states for a richer interface.
+A single event in a Flutter BLoC can manage two state variables by defining a state class with multiple fields—like `bool isProcessing` and `int actionCount` and updating them in the event handler. For example, in an `AppBloc`, a `PerformActionEvent` can emit a new state with `isProcessing: true` and `actionCount` incremented, then later emit `isProcessing: false` after a delay, using `copyWith` to modify the `AppState`. The UI, via `BlocBuilder`, can display both simultaneously showing a spinner when `isProcessing` is true and the updated `actionCount` as text—demonstrating how one event can control multiple states for a richer interface.
 
 ```
 // Event
