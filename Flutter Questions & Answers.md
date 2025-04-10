@@ -1,3 +1,44 @@
+**Q: How can a single event in a Flutter BLoC manage two state variables, like tracking a process and a counter, and display them in the UI?**
+
+A single event in a Flutter BLoC can manage two state variables by defining a state class with multiple fields—like `bool isProcessing` and `int actionCount`—and updating them in the event handler. For example, in an `AppBloc`, a `PerformActionEvent` can emit a new state with `isProcessing: true` and `actionCount` incremented, then later emit `isProcessing: false` after a delay, using `copyWith` to modify the `AppState`. The UI, via `BlocBuilder`, can display both simultaneously—showing a spinner when `isProcessing` is true and the updated `actionCount` as text—demonstrating how one event can control multiple states for a richer interface.
+
+```
+// Event
+abstract class AppEvent {}
+class PerformActionEvent extends AppEvent {}
+
+// State with two variables
+class AppState {
+  final bool isProcessing;    // First state variable
+  final int actionCount;      // Second state variable
+
+  AppState({required this.isProcessing, required this.actionCount});
+
+  AppState copyWith({bool? isProcessing, int? actionCount}) {
+    return AppState(
+      isProcessing: isProcessing ?? this.isProcessing,
+      actionCount: actionCount ?? this.actionCount,
+    );
+  }
+}
+
+// Bloc with one event
+class AppBloc extends Bloc<AppEvent, AppState> {
+  AppBloc() : super(AppState(isProcessing: false, actionCount: 0)) {
+    on<PerformActionEvent>((event, emit) async {
+
+      emit(state.copyWith(isProcessing: true, actionCount: state.actionCount + 1));
+
+      await Future.delayed(const Duration(milliseconds: 500));
+
+      emit(state.copyWith(isProcessing: false));
+    });
+  }
+}
+```
+
+**===== Flutter Questions & Answers =====**
+
 **Q: What is Equatable and what does it do?**
 
 **Equatable:** Value equality, compares objects by properties, not memory address. <br>
