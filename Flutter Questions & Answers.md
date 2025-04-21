@@ -1,3 +1,13 @@
+**Q: What is the difference between handling JSON wrapped in {} and [] when calling an API, and how does it affect the model class in Dart?**
+
+When the JSON is wrapped in {} (an object), the response is parsed directly into a single model instance (e.g., ModelName.fromJson(data)). For JSON wrapped in [] (an array), you return a List<ModelName> and use .map() to iterate through the array and convert each item into a model instance. In both cases, the model class remains the same; the difference lies in how you process the response:
+
+{} → Single object
+
+[] → List with .map() method
+
+**===== Flutter Questions & Answers =====**
+
 **Q: How can I add internal padding to a Card widget?**
 
 Wrap the content inside the child property of the Card with a Padding widget. This
