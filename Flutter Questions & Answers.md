@@ -60,10 +60,21 @@ This matches your provided JSON, where two classes (Model and Quotes) handle the
   "total": 1454
 }
 ```
+**Explanation:** This JSON has:
 
+A top-level object (quotes, total).
 
+A quotes array with objects (id, quote, author).
 
-**
+An author object inside each quote (name, birthYear).
+You need three classes:
+
+One for the top-level (quotes, total).
+
+One for the quotes array objects (id, quote, author).
+
+One for the nested author object (name, birthYear).
+
 
 **===== Flutter Questions & Answers =====**
 
