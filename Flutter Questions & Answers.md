@@ -4,6 +4,7 @@ To figure out how many model classes you need in Flutter, look at the structure 
 
 **1. One Class is Enough**
 **When:** The JSON is flat, with no nested objects or arrays.
+
 **Example JSON:**
 ```
 {
@@ -16,6 +17,7 @@ Explanation: This JSON has a single object with simple fields (id, quote, author
 
 **2. Two Classes are Enough**
 **When:** The JSON has a top-level object containing a list of objects or arrays, like your provided data.
+
 **Example JSON:**
 ```
 {
