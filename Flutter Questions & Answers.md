@@ -13,7 +13,7 @@ To figure out how many model classes you need in Flutter, look at the structure 
   "author": "Rumi"
 }
 ```
-Explanation: This JSON has a single object with simple fields (id, quote, author). You only need one class to map these fields. No nesting means no additional classes.
+**Explanation:** This JSON has a single object with simple fields (id, quote, author). You only need one class to map these fields. No nesting means no additional classes.
 
 **2. Two Classes are Enough**
 **When:** The JSON has a top-level object containing a list of objects or arrays, like your provided data.
