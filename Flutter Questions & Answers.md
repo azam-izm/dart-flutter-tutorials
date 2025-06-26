@@ -31,7 +31,7 @@ To determine the number of Dart model classes needed, count the nested objects i
 **Explanation:** The top-level object (quotes, total) needs one class. The quotes array contains objects, so a second class maps id, quote, and author.
 
 **3. Three Classes are Needed**
-**When:** The JSON has multiple levels of nesting, such as objects inside objects.
+**When:** The JSON has multiple levels of nesting, such as objects or arrays of objects inside objects.
 
 **Example JSON:**
 ```
