@@ -1,6 +1,6 @@
 **Q: How to determine the number of model classes required based on its structure?**
 
-To figure out how many model classes you need in Flutter, look at the structure of the JSON data. The number of nested objects or arrays in the JSON usually tells you how many classes you’ll need—each nested level typically needs its own class. Below, I’ll explain when one, two, or three classes are enough, using short JSON examples based on your data.
+To determine the number of Dart model classes needed, count the nested objects in the JSON. Each object (or array of objects) requires a separate class to map its fields. Lists of primitive types (e.g., strings, integers) don’t need a class; use List<String>, List<int>, etc. Below are clear examples showing when one, two, or three classes are needed.
 
 **1. One Class is Enough**
 **When:** The JSON is flat, with no nested objects or arrays.
@@ -13,36 +13,25 @@ To figure out how many model classes you need in Flutter, look at the structure 
   "author": "Rumi"
 }
 ```
-**Explanation:** This JSON has a single object with simple fields (id, quote, author). You only need one class to map these fields. No nesting means no additional classes.
+**Explanation:** A single object with simple fields (id, quote, author) needs one class.
 
 **2. Two Classes are Enough**
-**When:** The JSON has a top-level object containing a list of objects or arrays, like your provided data.
+**When:** The JSON has a top-level object containing a list of objects.
 
 **Example JSON:**
 ```
 {
   "quotes": [
-    {
-      "id": 1,
-      "quote": "Your heart is the size of an ocean.",
-      "author": "Rumi"
-    },
-    {
-      "id": 2,
-      "quote": "Thinking is the capital.",
-      "author": "Abdul Kalam"
-    }
+    {"id": 1, "quote": "Your heart is the size of an ocean.", "author": "Rumi"},
+    {"id": 2, "quote": "Thinking is the capital.", "author": "Abdul Kalam"}
   ],
   "total": 1454
 }
 ```
-**Explanation:** The top-level object has a quotes array (a list of objects) and a total field. You need:
-One class for the top-level object (quotes, total).
-Another class for the objects inside the quotes array (id, quote, author).
-This matches your provided JSON, where two classes (Model and Quotes) handle the structure.
+**Explanation:** The top-level object (quotes, total) needs one class. The quotes array contains objects, so a second class maps id, quote, and author.
 
 **3. Three Classes are Needed**
-**When:** The JSON has multiple levels of nesting, such as objects inside objects or arrays.
+**When:** The JSON has multiple levels of nesting, such as objects inside objects.
 
 **Example JSON:**
 ```
@@ -51,30 +40,13 @@ This matches your provided JSON, where two classes (Model and Quotes) handle the
     {
       "id": 1,
       "quote": "Your heart is the size of an ocean.",
-      "author": {
-        "name": "Rumi",
-        "birthYear": 1207
-      }
+      "author": {"name": "Rumi", "birthYear": 1207}
     }
   ],
   "total": 1454
 }
 ```
-**Explanation:** This JSON has:
-
-A top-level object (quotes, total).
-
-A quotes array with objects (id, quote, author).
-
-An author object inside each quote (name, birthYear).
-You need three classes:
-
-One for the top-level (quotes, total).
-
-One for the quotes array objects (id, quote, author).
-
-One for the nested author object (name, birthYear).
-
+**Explanation:** Three classes are needed: one for the top-level (quotes, total), one for the quotes array objects (id, quote, author), and one for the nested author object (name, birthYear).
 
 **===== Flutter Questions & Answers =====**
 
