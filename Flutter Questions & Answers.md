@@ -1,4 +1,67 @@
+**Q: How do I convert a list of JSON objects from an API response into a list of model class objects in Dart, and how do I properly fetch this data from an API?**
 
+To convert a list of JSON objects from an API response into a list of ModelClass objects in Dart, you need to fetch the data, parse the JSON response, and map each JSON object to a ModelClass instance. Below is a straightforward solution using the provided ModelClass and API fetching code.
+
+```
+import 'dart:convert';
+import 'package:http/http.dart' as http;
+
+class ModelClass {
+  int? userId;
+  int? id;
+  String? title;
+  String? body;
+
+  ModelClass({this.userId, this.id, this.title, this.body});
+
+  ModelClass.fromJson(Map<String, dynamic> json) {
+    userId = json['userId'];
+    id = json['id'];
+    title = json['title'];
+    body = json['body'];
+  }
+}
+
+Future<List<ModelClass>> fetchData() async {
+  try {
+    final url = Uri.parse('https://jsonplaceholder.typicode.com/posts');
+    final response = await http.get(url);
+
+    if (response.statusCode == 200) {
+      List<dynamic> data = jsonDecode(response.body);
+      return data.map((json) => ModelClass.fromJson(json)).toList();
+    } else {
+      throw Exception('Failed to fetch data: ${response.statusCode}');
+    }
+  } catch (error) {
+    throw Exception('Error: $error');
+  }
+}
+```
+Explanation:
+```
+data.map((json) => ModelClass.fromJson(json)).toList(); 
+this line 👆 transforms a list of JSON objects into a list of ModelClass objects
+
+list 👇 of JSON objects
+[
+  {"userId": 1, "id": 1, "title": "Post 1", "body": "Body 1"},
+  {"userId": 1, "id": 2, "title": "Post 2", "body": "Body 2"}
+]
+
+
+The line data.map((json) => ModelClass.fromJson(json)).toList():
+Iterates over each JSON object in the list.
+
+Calls ModelClass.fromJson for each object, creating:
+
+list 👇 of ModelClass objects
+ModelClass(userId: 1, id: 1, title: "Post 1", body: "Body 1")
+ModelClass(userId: 1, id: 2, title: "Post 2", body: "Body 2")
+
+Returns a list: [ModelClass(...), ModelClass(...)].
+```
+**===== Flutter Questions & Answers =====**
 
 **Q: How to determine the number of model classes required based on its structure?**
 
