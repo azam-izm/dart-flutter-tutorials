@@ -1,3 +1,37 @@
+**Q: Can we guess the exact JSON format just by looking at a Dart model class?**
+
+No. The model class only shows the structure of a single item — not the full API response.
+
+**Dart Model:**
+```
+class Post {
+  int? userId;
+  int? id;
+  String? title;
+  String? body;
+}
+```
+
+Possible JSON Responses:
+
+**1. Single object:**
+```
+{
+  "userId": 1,
+  "id": 1,
+  "title": "Sample Title",
+  "body": "Post body"
+}
+```
+**2. List of objects:**
+```
+[
+  { "userId": 1, "id": 1, "title": "Title", "body": "..." },
+  { "userId": 2, "id": 2, "title": "Title", "body": "..." }
+]
+```
+**===== Flutter Questions & Answers =====**
+
 **Q: How do I convert a list of JSON objects from an API response into a list of model class objects in Dart, and how do I properly fetch this data from an API?**
 
 To convert a list of JSON objects from an API response into a list of ModelClass objects in Dart, you need to fetch the data, parse the JSON response, and map each JSON object to a ModelClass instance. Below is a straightforward solution using the provided ModelClass and API fetching code.
