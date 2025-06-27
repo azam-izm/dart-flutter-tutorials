@@ -1,8 +1,11 @@
+
+
 **Q: How to determine the number of model classes required based on its structure?**
 
 To determine the number of Dart model classes needed, count the nested objects in the JSON. Each object (or array of objects) requires a separate class to map its fields. Lists of primitive types (e.g., strings, integers) don’t need a class; use List<String>, List<int>, etc. Below are clear examples showing when one, two, or three classes are needed.
 
 **1. One Class is Enough**
+
 **When:** The JSON is flat, with no nested objects or arrays.
 
 **Example JSON:**
@@ -16,6 +19,7 @@ To determine the number of Dart model classes needed, count the nested objects i
 **Explanation:** A single object with simple fields (id, quote, author) needs one class.
 
 **2. Two Classes are Enough**
+
 **When:** The JSON has a top-level object containing a list of objects.
 
 **Example JSON:**
@@ -31,6 +35,7 @@ To determine the number of Dart model classes needed, count the nested objects i
 **Explanation:** The top-level object (quotes, total) needs one class. The quotes array contains objects, so a second class maps id, quote, and author.
 
 **3. Three Classes are Needed**
+
 **When:** The JSON has multiple levels of nesting, such as objects or arrays of objects inside objects.
 
 **Example JSON:**
