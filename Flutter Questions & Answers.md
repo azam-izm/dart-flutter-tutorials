@@ -1,3 +1,20 @@
+**Q: Difference between Firestore Database (Cloud Firestore) and Realtime Database.**
+
+```
+| Feature               | Firestore                                     | Realtime Database                            |
+|-----------------------|-----------------------------------------------|----------------------------------------------|
+| Type                  | Newer, advanced alternative                   | Older, simpler database                      |
+| Data Format           | Documents & Collections (structured)          | JSON tree (unstructured)                     |
+| Flexibility           | Highly flexible                               | Limited flexibility                          |
+| Scalability           | Horizontally scalable                         | Less scalable                                |
+| Speed (Large Apps)    | Generally faster                              | Slower as data grows                         |
+| Offline Support       | Web, Android, iOS (local cache)               | Android & iOS only                           |
+| Querying              | Advanced, indexed queries                     | Basic queries only                           |
+| Use Case              | Complex, scalable apps                        | Simple real-time apps                        |
+```
+
+**===== Flutter Questions & Answers =====**
+
 **Q: Can we guess the exact JSON format just by looking at a Dart model class?**
 
 No. The model class only shows the structure of a single item — not the full API response.
