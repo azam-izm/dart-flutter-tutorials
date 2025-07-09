@@ -1,7 +1,7 @@
 **Q: Difference between Firestore Database (Cloud Firestore) and Realtime Database.**
 
 ```
-| Feature               | Firestore                                     | Realtime Database                            |
+| **Feature**               | Firestore                                     | Realtime Database                            |
 |-----------------------|-----------------------------------------------|----------------------------------------------|
 | Type                  | Newer, advanced alternative                   | Older, simpler database                      |
 | Data Format           | Documents & Collections (structured)          | JSON tree (unstructured)                     |
