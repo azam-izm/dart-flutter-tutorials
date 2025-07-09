@@ -279,7 +279,7 @@ class AppBloc extends Bloc<AppEvent, AppState> {
 **Equatable:** Value equality, compares objects by properties, not memory address. <br>
 **Does:** Helps Bloc compare states, prevents unnecessary state emits, avoids redundant UI rebuilds. <br>
 
-**===== Flutter Questions & Answers =====**
+**===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
 
 **Q: How can I initialize a BLoC in Flutter with an event to trigger an action immediately after creation, and what’s the proper syntax for doing so in a BlocProvider?**
 
