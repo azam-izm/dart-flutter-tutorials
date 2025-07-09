@@ -22,7 +22,9 @@ Realtime Database example:
 ```
 FirebaseDatabase.instance.ref('users').onValue;
 ```
-**===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**                                               
+**===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**    
+
+
 **Q: Difference between Firestore Database (Cloud Firestore) and Realtime Database.**
 
 ```
@@ -38,7 +40,7 @@ FirebaseDatabase.instance.ref('users').onValue;
 | Use Case              | Complex, scalable apps                        | Simple real-time apps                        |
 ```
 
-**===== Flutter Questions & Answers =====**
+**===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
 
 **Q: Can we guess the exact JSON format just by looking at a Dart model class?**
 
@@ -72,7 +74,7 @@ Possible JSON Responses:
   { "userId": 2, "id": 2, "title": "Title", "body": "..." }
 ]
 ```
-**===== Flutter Questions & Answers =====**
+**===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
 
 **Q: How do I convert a list of JSON objects from an API response into a list of model class objects in Dart, and how do I properly fetch this data from an API?**
 
@@ -137,7 +139,7 @@ ModelClass(userId: 1, id: 2, title: "Post 2", body: "Body 2")
 
 Returns a list: [ModelClass(...), ModelClass(...)].
 ```
-**===== Flutter Questions & Answers =====**
+**===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
 
 **Q: How to determine the number of model classes required based on its structure?**
 
@@ -192,7 +194,7 @@ To determine the number of Dart model classes needed, count the nested objects i
 ```
 **Explanation:** Three classes are needed: one for the top-level (quotes, total), one for the quotes array objects (id, quote, author), and one for the nested author object (name, birthYear).
 
-**===== Flutter Questions & Answers =====**
+**===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
 
 **Q: What is a Device Token?**
 
@@ -208,7 +210,7 @@ When the JSON is wrapped in {} (an object), the response is parsed directly into
 
 [] → List with .map() method
 
-**===== Flutter Questions & Answers =====**
+**===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
 
 **Q: How can I add internal padding to a Card widget?**
 
@@ -228,7 +230,7 @@ Card(
 )
 ```
 
-**===== Flutter Questions & Answers =====**
+**===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
 
 
 **Q: How can a single event in a Flutter BLoC manage two state variables, like tracking a process and a counter, and display them in the UI?**
@@ -270,7 +272,7 @@ class AppBloc extends Bloc<AppEvent, AppState> {
 }
 ```
 
-**===== Flutter Questions & Answers =====**
+**===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
 
 **Q: What is Equatable and what does it do?**
 
@@ -291,7 +293,7 @@ BlocProvider<CounterBloc>(
 ```
 This creates the CounterBloc and immediately dispatches the IncrementEvent, triggering the associated logic (e.g., incrementing a counter) as soon as the BLoC is instantiated. Ensure your BLoC’s event handler is set up to process the event correctly.
 
-**===== Flutter Questions & Answers =====**
+**===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
 
 **Q: Does Get.put(ControllerClassName) in GetX work like context.read or context.watch in Provider, or ref.read or ref.watch in Riverpod?**
 
@@ -304,7 +306,7 @@ context.read and context.watch (Provider) or ref.read and ref.watch (Riverpod) a
 listening to state changes, but they are used differently.
 ```
 
-**===== Flutter Questions & Answers =====**
+**===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
 
 **Q: Why is it not allowed to specify type parameters (generics) in Riverpod’s ConsumerWidget, but necessary in Provider?**
 
@@ -333,7 +335,7 @@ ConsumerWidget(
 );
 ```
 
-**===== Flutter Questions & Answers =====**
+**===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
 
 **Q: What is the difference between onSubmitted and TextEditingController in Flutter, and when should each be used?**
 
@@ -365,7 +367,7 @@ programmatic control over text fields.
 ```
 
 
-**===== Flutter Questions & Answers =====**
+**===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
 
 **Q: Why can't we use a ListView directly inside a Column in Flutter?**
 
@@ -387,7 +389,7 @@ Column(
 )
 ```
 
-**===== Flutter Questions & Answers =====**
+**===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
 
 **Q: In Flutter BLoC, which widgets are used to interact with the state in the UI?**
 
@@ -404,7 +406,7 @@ Column(
 
 Most commonly, developers use BlocBuilder, BlocListener, and BlocConsumer, but BlocSelector is also an important tool for improving performance.
 
-**===== Flutter Questions & Answers =====**
+**===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
 
 **Q: What is the difference between BlocBuilder and BlocListener in Flutter's BLoC package?**
 
@@ -433,7 +435,7 @@ BlocListener<CounterBloc, int>(
   child: Container(), // A child widget can be provided
 );
 ```
-**===== Flutter Questions & Answers =====**
+**===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
 
 **Q: Why does Flutter throw an error when adding a nested list inside children: in widgets like Column, Row, or Stack?**
 
@@ -452,7 +454,7 @@ Column(
 )
 ```
 
-**===== Flutter Questions & Answers =====**
+**===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
 
 **Q: How can I set up routes in MaterialApp without using initialRoute or home?**
 
@@ -465,34 +467,34 @@ routes: {
 }
 ```
 
-**===== Flutter Questions & Answers =====**
+**===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
 
 **Q: What does Provider provide in Flutter, and what are its core features?**
 
 
 Provider is a state management solution in Flutter that offers a simple and efficient way to manage app state, providing dependency injection, automatic widget rebuilding, and reactive programming to streamline data flow across the app.
 
-**===== Flutter Questions & Answers =====**
+**===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
 
 **Q: What does Riverpod provide in Flutter, and what are its core features?**
 
 Riverpod is a state management solution in Flutter that offers a more flexible and scalable alternative to Provider, providing features like better testability, compile-time safety, and the ability to manage state globally without relying on the widget tree.
 
-**===== Flutter Questions & Answers =====**
+**===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
 
 **Q: What does GetX provide in Flutter, and what are its core features?**
 
 
 GetX is a Flutter package that provides state management, route management, and dependency injection, offering reactive programming, easy navigation, and efficient handling of app states with minimal boilerplate code.
 
-**===== Flutter Questions & Answers =====**
+**===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
 
 **Q: What does Bloc provide in Flutter, and what are its core features?**
 
 
 Bloc (Business Logic Component) provides a predictable state management solution in Flutter, following the BLoC pattern. Its core features include separating business logic from UI, managing state through streams, and ensuring a clear flow of data with events and states, promoting scalability and testability.
 
-**===== Flutter Questions & Answers =====**
+**===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
 
 **Q: What is the difference between Provider, GetX, Riverpod, and Bloc in terms of dependency injection and routing?**
 
@@ -509,4 +511,4 @@ Provider, Riverpod, and Bloc do not handle routing and rely on Flutter's default
 external routing libraries.
 ```
 
-**===== Flutter Questions & Answers =====**
+**===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
