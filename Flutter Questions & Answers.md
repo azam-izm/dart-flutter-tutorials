@@ -1,3 +1,30 @@
+**Q: What function is used to fetch data from Firebase in Flutter using FutureBuilder and StreamBuilder?**
+
+In FutureBuilder (one-time fetch): Use .get() for Firestore and once() for Realtime DB
+
+Firestore example:
+```
+FirebaseFirestore.instance.collection('collection_name').get();
+```
+
+Realtime Database example:
+```
+FirebaseDatabase.instance.ref('users').once();
+```
+
+In StreamBuilder (real-time updates): Use .snapshots() for Firestore and onValue for Realtime DB
+
+Firestore example:
+```
+FirebaseFirestore.instance.collection('users').snapshots();
+```
+Realtime Database example:
+```
+FirebaseDatabase.instance.ref('users').onValue;
+```
+
+**===== Flutter Questions & Answers =====**
+
 **Q: Difference between Firestore Database (Cloud Firestore) and Realtime Database.**
 
 ```
