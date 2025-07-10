@@ -1,3 +1,76 @@
+**Q: Most commonly used Firebase commands in Flutter for Firestore and Realtime Database**
+
+🔥 **Cloud Firestore**
+
+Add Data
+```
+FirebaseFirestore.instance.collection('collection_name').add({
+  'key': 'value',
+});
+```
+
+Update Data
+```
+FirebaseFirestore.instance.collection('collection_name').doc('document_id').update({
+  'key': 'new_value',
+});
+```
+
+Set Data (add or overwrite)
+```
+FirebaseFirestore.instance.collection('collection_name').doc('document_id').set({
+  'key': 'value',
+});
+```
+
+Delete Data
+```
+FirebaseFirestore.instance.collection('collection_name').doc('document_id').delete();
+```
+
+Read Data Once (FutureBuilder)
+```
+FirebaseFirestore.instance.collection('collection_name').get();
+```
+
+Real-time Data (StreamBuilder)
+```
+FirebaseFirestore.instance.collection('collection_name').snapshots();
+```
+
+🔄 **Realtime Database**
+
+Add or Set Data
+```
+FirebaseDatabase.instance.ref('path_name').set({
+  'key': 'value',
+});
+```
+
+Update Data
+```
+FirebaseDatabase.instance.ref('path_name').update({
+  'key': 'new_value',
+});
+```
+
+Delete Data
+```
+FirebaseDatabase.instance.ref('path_name').remove();
+```
+
+Read Data Once (FutureBuilder)
+```
+FirebaseDatabase.instance.ref('path_name').once();
+```
+
+Real-time Data (StreamBuilder)
+```
+FirebaseDatabase.instance.ref('path_name').onValue;
+```
+
+**===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
+
 **Q: Difference between Firestore Database (Cloud Firestore) and Realtime Database.**
 
 ```
