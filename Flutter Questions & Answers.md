@@ -258,27 +258,6 @@ When the JSON is wrapped in {} (an object), the response is parsed directly into
 
 **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
 
-**Q: HOW CAN I ADD INTERNAL PADDING TO A CARD WIDGET?**
-
-Wrap the content inside the child property of the Card with a Padding widget. This
-
-```
-Card(
-  child: Padding(
-    padding: const EdgeInsets.all(16.0),
-    child: Column(
-      mainAxisSize: MainAxisSize.min,
-      children: <Widget>[
-        Text('Card content with internal padding'),
-      ],
-    ),
-  ),
-)
-```
-
-**===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
-
-
 **Q: HOW CAN A SINGLE EVENT IN A FLUTTER BLOC MANAGE TWO STATE VARIABLES, LIKE TRACKING A PROCESS AND A COUNTER, AND DISPLAY THEM IN THE UI?**
 
 A single event in a Flutter BLoC can manage two state variables by defining a state class with multiple fields, like `bool isProcessing` and `int actionCount` and updating them in the event handler. For example, in an `AppBloc`, a `PerformActionEvent` can emit a new state with `isProcessing: true` and `actionCount` incremented, then later emit `isProcessing: false` after a delay, using `copyWith` to modify the `AppState`. The UI, via `BlocBuilder`, can display both simultaneously showing a spinner when `isProcessing` is true and the updated `actionCount` as text demonstrating how one event can control multiple states for a richer interface.
