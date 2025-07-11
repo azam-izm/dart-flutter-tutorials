@@ -415,7 +415,7 @@ programmatic control over text fields.
 
 **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
 
-**Q: WHY CAN'T WE USE A LISTVIEW DIRECTLY INSIDE A COLUMN IN FLUTTER?**
+**Q: WHY CAN'T WE USE A ListView DIRECTLY INSIDE A Column IN FLUTTER?**
 
 A ListView expects height constraints, but a Column doesn't provide them, leading to an unbounded height error. Wrapping the ListView with Expanded or Flexible provides the necessary constraints.
 
