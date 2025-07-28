@@ -1,10 +1,10 @@
-**Q: What is Hive in Flutter?**
+**Q: WHAT IS HIVE IN FLUTTER?**
 
 Hive is a fast and lightweight key-value NoSQL database for storing both simple and complex structured data locally in Flutter.
 
 **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
 
-**Q: What is SharedPreferences?**
+**Q: WHAT IS SHAREDPREFERENCES?**
 
  `SharedPreferences` is a key-value storage used to save small, simple data like user preferences locally on the device.
  
