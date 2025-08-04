@@ -102,10 +102,10 @@ FirebaseDatabase.instance.ref('path_name').onValue;
 
 **Q: WHAT IS THE PURPOSE OF EACH PART OF A DART MODEL CLASS WHEN WORKING WITH JSON DATA?**
 
-Fields               -> Store data inside the object (e.g., int? id, String? quote, etc.) <br>
-ModelClass({...})    -> Used to create an object manually by passing values directly<br>
-ModelClass.fromJson  -> Used to create an object from JSON (usually when receiving data from an API)<br>
-toJson()             -> Used to convert the object back into a JSON/map (usually when sending data to an API)
+**Fields**               `Store data inside the object (e.g., int? id, String? quote, etc.)` <br>
+**ModelClass({...})**    `Used to create an object manually by passing values directly`<br>
+**ModelClass.fromJson**  `Used to create an object from JSON (usually when receiving data from an API)`<br>
+**toJson() **            `Used to convert the object back into a JSON/map (usually when sending data to an API)`
 
 **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
 
