@@ -100,6 +100,15 @@ FirebaseDatabase.instance.ref('path_name').onValue;
 
 **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
 
+**Q: WHAT IS THE PURPOSE OF EACH PART OF A DART MODEL CLASS WHEN WORKING WITH JSON DATA?**
+
+Fields               -> Store data inside the object (e.g., int? id, String? quote, etc.)
+ModelClass({...})    -> Used to create an object manually by passing values directly
+ModelClass.fromJson  -> Used to create an object from JSON (usually when receiving data from an API)
+toJson()             -> Used to convert the object back into a JSON/map (usually when sending data to an API)
+
+**===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
+
 **Q: CAN WE GUESS THE EXACT JSON FORMAT JUST BY LOOKING AT A DART MODEL CLASS?**
 
 No. The model class only shows the structure of a single item — not the full API response.
