@@ -1,3 +1,11 @@
+**Q: WHAT ARE THE MAIN COMPONENTS OF MVVM IN FLUTTER AND THEIR ROLES?**
+
+`Model:` Defines data structures and related logic.
+`View:` UI layer that displays data and takes user input.
+`ViewModel:` Manages state, processes logic, acts as a bridge between the Model and View.
+
+**===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
+
 **Q: WHAT IS HIVE IN FLUTTER?**
 
 Hive is a fast and lightweight key-value NoSQL database for storing both simple and complex structured data locally in Flutter.
