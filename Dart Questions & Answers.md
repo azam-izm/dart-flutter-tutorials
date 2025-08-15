@@ -1,3 +1,7 @@
+<!-- 
+$${\color{orange}Dart\ Questions\ Answers}$$
+-->
+
 **Q: Why does declaring a final variable without an initializer work in a function but not as a class field in Dart, and how should it be handled in a class?**
 
 In Dart, a `final` variable can be declared without an initializer in a local scope (e.g., inside a function)
@@ -24,7 +28,7 @@ or in a constructor’s initializer list (e.g., Example() : greeting = "Hello, D
 ```
 because class fields lack the runtime flow analysis of functions and Dart enforces immutability at compile time. To handle it in a class, either provide an initializer or use the constructor’s initializer list; otherwise, you’d need late final if initialization is deferred but still occurs exactly once before access.
 
-**===== Dart Questions & Answers =====**
+$${\color{orange}Dart\ Questions\ Answers}$$
 
 **Q: What is the correct structure for using extends, with, and implements in Dart, including all combinations and cases?**
 
@@ -38,7 +42,7 @@ class Vehicle extends Machine with M1, M2 implements I1, I2 {}
 
 class Vehicle with M1, M2 implements I1, I2 {}
 ```
-**===== Dart Questions & Answers =====**
+$${\color{orange}Dart\ Questions\ Answers}$$
 
 **Q: What is dependency injection in Flutter state management?**
 
@@ -94,7 +98,7 @@ void main() {
 }
 ```
 
-**===== Dart Questions & Answers =====**
+$${\color{orange}Dart\ Questions\ Answers}$$
 
 **Q: What is the purpose of the abs() method in Dart, and how is it used?**
 
@@ -109,7 +113,7 @@ void main() {
   print(positiveNumber.abs()); // Output: 10.5
 }
 ```
-**===== Dart Questions & Answers =====**
+$${\color{orange}Dart\ Questions\ Answers}$$
 
 **Q: How can we reverse a string in Dart?**
 
@@ -155,7 +159,7 @@ void main() {
 ```
 This splits the string into a list of characters, reverses the list, and joins it back into a string.
 
-**===== Dart Questions & Answers =====**
+$${\color{orange}Dart\ Questions\ Answers}$$
 
 **Q: What is the purpose of the copyWith method in Dart/Flutter?**
 
@@ -185,61 +189,61 @@ void main() {
 }
 ```
 
-**===== Dart Questions & Answers =====**
+$${\color{orange}Dart\ Questions\ Answers}$$
 
 **Q: What is the purpose of using model classes in Dart?**
 
 Model classes are used in Dart to represent data in a structured and type-safe way, making the code more readable, maintainable, and error-free.
 
-**===== Dart Questions & Answers =====**
+$${\color{orange}Dart\ Questions\ Answers}$$
 
 **Q: What is shadowing in Dart?**
 
 Shadowing is when a variable declared in an inner scope has the same name as one in an outer scope, causing the inner one to hide the outer.
 
-**===== Dart Questions & Answers =====**
+$${\color{orange}Dart\ Questions\ Answers}$$
 
 **Q: Why do we create custom constructors?**
 
 To define specific initialization logic and control object creation.
 
-**===== Dart Questions & Answers =====**
+$${\color{orange}Dart\ Questions\ Answers}$$
 
 **Q: Do for, for-in, and forEach return anything in Dart?**
 
 ❌ No, all three return void and do not produce a value.
 
-**===== Dart Questions & Answers =====**
+$${\color{orange}Dart\ Questions\ Answers}$$
 
 **Q: Is forEach a method or a statement?**
 
 forEach is a method that belongs to the Iterable class and is used to iterate over elements.
  
-**===== Dart Questions & Answers =====**
+$${\color{orange}Dart\ Questions\ Answers}$$
 
 **Q: Are for and for-in methods?**
 
 No, for and for-in are control flow statements and not methods, as they are built into Dart's syntax.
 
-**===== Dart Questions & Answers =====**
+$${\color{orange}Dart\ Questions\ Answers}$$
 
 **Q: How to recognize a function in Dart?**
 
 A function has a return type, a name (unless anonymous), parentheses () for parameters, and a body {} or => for expressions.
 
-**===== Dart Questions & Answers =====**
+$${\color{orange}Dart\ Questions\ Answers}$$
 
 **Q: Does everything with parentheses () mean it's a function?**
 
  No, parentheses can also be used in method calls, constructor calls, and function variables, so not everything with () is a function.
  
- **===== Dart Questions & Answers =====**
+$${\color{orange}Dart\ Questions\ Answers}$$
  
 **Q: What’s the key difference between for, for-in, and forEach?**
 
 The for loop is a general-purpose control flow statement that allows full control over iteration, including using break and continue. The for-in loop is a simpler way to iterate over collections but still supports break and continue. The forEach method, on the other hand, is a built-in method of Iterable, requires an object to be called on, and does not support break or continue, making it less flexible than the other two loops.
 
-**===== Dart Questions & Answers =====**
+$${\color{orange}Dart\ Questions\ Answers}$$
 
 
 **Q: What are the different types of variables?**  
@@ -274,7 +278,7 @@ Variable types can be categorized into five main parts based on different charac
 
 Each of these categories defines how a variable behaves in terms of scope, accessibility, storage, mutability, initialization behavior and nullability.
    
-**===== Dart Questions & Answers =====** 
+$${\color{orange}Dart\ Questions\ Answers}$$
 
 
 **Q: What is the difference between .reduce and .fold in Dart?**
@@ -285,7 +289,7 @@ Example: listName.reduce((a, b) => a + b) → calculates the sum.
 **.fold:** Similar to .reduce, but allows you to provide an initial value and works on empty collections.
 Example: listName.fold(0, (a, b) => a + b) → calculates the sum with a starting value of 0.
 
-**===== Dart Questions & Answers =====** 
+$${\color{orange}Dart\ Questions\ Answers}$$
 
 **Q: Why does .reduce not work with an empty list but .fold works perfectly?**
 
@@ -295,7 +299,7 @@ Example: emptyList.reduce((a, b) => a + b) → Throws an error for an empty list
 **.fold:** Works with empty lists because it allows you to provide an initial value. If the list is empty, it simply returns the initial value without any errors.
 Example: emptyList.fold(0, (a, b) => a + b) → Returns 0 for an empty list.
 
-**===== Dart Questions & Answers =====** 
+$${\color{orange}Dart\ Questions\ Answers}$$
 
 **Q: What is the difference between .where and .reduce in Dart?**
 
@@ -305,7 +309,7 @@ Example: listName.where((n) => n % 2 == 0) → filters even numbers.
 **.reduce:** Combines all elements into a single value (e.g., sum, product).
 Example: listName.reduce((a, b) => a + b) → calculates the sum.
 
-**===== Dart Questions & Answers =====** 
+$${\color{orange}Dart\ Questions\ Answers}$$
 
 **Q: What is the difference between the .map() and .where() methods in Dart?**
 
@@ -313,11 +317,12 @@ Example: listName.reduce((a, b) => a + b) → calculates the sum.
 
 **.where():** Filters elements based on a condition.
 
-**===== Dart Questions & Answers =====** 
+$${\color{orange}Dart\ Questions\ Answers}$$
 
 **Q: How does Dart handle string repetition using the * operator, and why does it work only when the string is on the left?**
 
 In Dart, a string can be repeated using the * operator when the left operand is a string and the right operand is an integer. This means that the string will be repeated n times, where n is the integer value. **void main() {for (int i = 1; i <= 6; i++) print('$i' * i);}**
 
-**===== Dart Questions & Answers =====** 
+$${\color{orange}Dart\ Questions\ Answers}$$
+
 
