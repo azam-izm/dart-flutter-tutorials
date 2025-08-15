@@ -1,9 +1,13 @@
+<!-- 
+$${\color{orange}Flutter\ Questions\ Answers}$$
+-->
+
 **Q: In Flutter, when should we use FutureBuilder and when is it not needed?**
 
 `Use FutureBuilder` → When you are calling an async method (like an API call) inside the widget and need to handle loading, success, and error states directly in the UI. <br>
 `Do not use FutureBuilder` → When the data is already fetched before building the widget (e.g., stored in a variable, ViewModel, or state management). In that case, build the UI directly with widgets like ListView.builder.
 
-**===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**          **===== Flutter Questions & Answers =====**
+$${\color{orange}Flutter\ Questions\ Answers}$$
 
 **Q: WHAT ARE THE MAIN COMPONENTS OF MVVM IN FLUTTER AND THEIR ROLES?**
 
