@@ -4,6 +4,7 @@ $${\color{orange}Flutter\ Questions\ Answers}$$
 Q: What is the difference between `FutureProvider/StreamProvider` and `StateNotifierProvider/StateProvider` in terms of state mutability?
 
 `FutureProvider / StreamProvider` → Used for async data (API, DB, streams). They expose results as immutable `AsyncValue` snapshots (`loading`, `data`, `error`). You cannot update `.state` manually because they don’t hold mutable state. <br>
+
 `StateNotifierProvider / StateProvider / ChangeNotifierProvider` → These do hold mutable state. You can directly update `.state` or use methods to change the value, and the UI will rebuild accordingly.
 
 $${\color{orange}Flutter\ Questions\ Answers}$$
