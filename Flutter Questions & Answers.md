@@ -1,6 +1,23 @@
 <!-- 
 $${\color{orange}Flutter\ Questions\ Answers}$$
 -->
+**Q: What is the difference between using `ref.read(myProvider)` and `ref.read(myProvider.notifier).state` in Riverpod?**
+
+Use `ref.read(myProvider)` if you only need the value.
+```
+final value = ref.read(myProvider);  
+print(value); // Example: 10
+```
+
+Use `ref.read(myProvider.notifier).state` if you want to read and update the value.
+```
+// Read current value
+final value = ref.read(myProvider.notifier).state;  
+
+// Update value
+ref.read(myProvider.notifier).state = 20;
+```
+$${\color{orange}Flutter\ Questions\ Answers}$$
 
 **Q: In Flutter, when should we use FutureBuilder and when is it not needed?**
 
