@@ -1,6 +1,12 @@
 <!-- 
 $${\color{orange}Flutter\ Questions\ Answers}$$
 -->
+**Q: Why does calling Get.put(Controller()) inside Obx work fine, but inside GetBuilder it causes issues?**
+
+Because Obx only cares about .obs values, so Get.put just returns the same cached controller. But GetBuilder gives you its own controller instance, and if you ignore it and call Get.put again, you break the link to update().
+
+$${\color{orange}Flutter\ Questions\ Answers}$$
+
 **Q: Why is it bad practice to create circular dependencies between UI controls, such as a slider and a switch, that update each other’s state?**
 
 Because circular dependencies cause infinite update loops, making the UI unstable. They also make the code harder to debug and maintain. Instead, one source of truth should drive both controls.
