@@ -1,6 +1,12 @@
 <!-- 
 $${\color{orange}Flutter\ Questions\ Answers}$$
 -->
+**Q: Why is it bad practice to create circular dependencies between UI controls, such as a slider and a switch, that update each other’s state?**
+
+Because circular dependencies cause infinite update loops, making the UI unstable. They also make the code harder to debug and maintain. Instead, one source of truth should drive both controls.
+
+$${\color{orange}Flutter\ Questions\ Answers}$$
+
 Q: What is the difference between `FutureProvider/StreamProvider` and `StateNotifierProvider/StateProvider` in terms of state mutability?
 
 `FutureProvider / StreamProvider` → Used for async data (API, DB, streams). They expose results as immutable `AsyncValue` snapshots (`loading`, `data`, `error`). You cannot update `.state` manually because they don’t hold mutable state. <br>
