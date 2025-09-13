@@ -1,6 +1,12 @@
 <!-- 
 $${\color{orange}Flutter\ Questions\ Answers}$$
 -->
+**Q: What are the SOLID principles, and why are they important in software development?**
+
+SOLID is an acronym for five different principles. It is a set of object-oriented class design principles that provide rules for writing classes in a way that makes the code more readable, understandable, and testable.
+
+$${\color{orange}Flutter\ Questions\ Answers}$$
+
 **Q: Why does calling Get.put(Controller()) inside Obx work fine, but inside GetBuilder it causes issues?**
 
 Because Obx rebuilds from .obs values and Get.put just returns the same cached controller, but GetBuilder rebuilds only when update() is called on the controller it provides in builder. If you ignore that controller and call Get.put again, you end up with a different controller that isn’t connected to update().
