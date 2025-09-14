@@ -607,9 +607,8 @@ $${\color{orange}Flutter\ Questions\ Answers}$$
 
 Dependency Injection:
 ```
-Provider and GetX provide built-in dependency injection features.
-Riverpod and Bloc do not offer direct dependency injection; you can manage state but need external
-solutions for DI.
+Provider, GetX, and Riverpod provide built-in dependency injection features.
+Bloc itself does not offer DI; you typically use BlocProvider or another DI tool
 ```
 Routing:
 ```
