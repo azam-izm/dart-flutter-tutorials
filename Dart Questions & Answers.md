@@ -44,6 +44,16 @@ class Vehicle with M1, M2 implements I1, I2 {}
 ```
 $${\color{orange}Dart\ Questions\ Answers}$$
 
+**Q: What’s the difference between extends, with, and implements in Dart (Flutter)?**
+
+*extends* → used for a parent–child relationship (inheritance). <br>
+
+*with* → used to reuse code from mixins without inheritance. <br> 
+
+*implements* → used to define a contract; the class must provide its own implementation of all the interface’s methods and properties.
+
+$${\color{orange}Dart\ Questions\ Answers}$$
+
 **Q: What is dependency injection in Flutter state management?**
 
 Providing (injecting) a class (dependency) to another class instead of creating it inside, making code more manageable, testable, and reusable.
@@ -324,5 +334,6 @@ $${\color{orange}Dart\ Questions\ Answers}$$
 In Dart, a string can be repeated using the * operator when the left operand is a string and the right operand is an integer. This means that the string will be repeated n times, where n is the integer value. **void main() {for (int i = 1; i <= 6; i++) print('$i' * i);}**
 
 $${\color{orange}Dart\ Questions\ Answers}$$
+
 
 
