@@ -1,11 +1,11 @@
 <!-- 
 $${\color{orange}Dart\ Questions\ Answers}$$
 -->
-**Q: What’s the difference between RegExp(r'(?=.*[a-z])') and RegExp(r'(.*[a-z])')?**
+**Q: What’s the difference between `RegExp(r'(?=.*[a-z])')` and `RegExp(r'(.*[a-z])')`?**
 
 
-(?=.*[a-z]) only checks condition (returns true/false).<br>
-(.*[a-z]) captures text up to the last lowercase letter.
+`(?=.*[a-z])` only checks condition (returns true/false).<br>
+`(.*[a-z])` captures text up to the last lowercase letter.
 
 ```
 final hasLower = RegExp(r'(?=.*[a-z])').hasMatch("ABcDEfGHiJKL"); // true
@@ -347,6 +347,7 @@ $${\color{orange}Dart\ Questions\ Answers}$$
 In Dart, a string can be repeated using the * operator when the left operand is a string and the right operand is an integer. This means that the string will be repeated n times, where n is the integer value. **void main() {for (int i = 1; i <= 6; i++) print('$i' * i);}**
 
 $${\color{orange}Dart\ Questions\ Answers}$$
+
 
 
 
