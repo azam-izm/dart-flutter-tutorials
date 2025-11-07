@@ -9,6 +9,7 @@ $${\color{orange}Dart\ Questions\ Answers}$$
 
 ```
 final hasLower = RegExp(r'(?=.*[a-z])').hasMatch("ABcDEfGHiJKL"); // true
+
 final match = RegExp(r'(.*[a-z])').firstMatch("ABcDEfGHiJKL");
 print(match?.group(0)); // ABcDEfGHi
 ```
@@ -347,6 +348,7 @@ $${\color{orange}Dart\ Questions\ Answers}$$
 In Dart, a string can be repeated using the * operator when the left operand is a string and the right operand is an integer. This means that the string will be repeated n times, where n is the integer value. **void main() {for (int i = 1; i <= 6; i++) print('$i' * i);}**
 
 $${\color{orange}Dart\ Questions\ Answers}$$
+
 
 
 
