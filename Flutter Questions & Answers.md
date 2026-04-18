@@ -1,6 +1,22 @@
 <!-- 
 $${\color{orange}Flutter\ Questions\ Answers}$$
 -->
+
+**Q: What does `clamp()` do in Flutter (Dart)?**
+
+ `clamp()` keeps a number inside a fixed range.
+
+**Example:**
+
+```
+double value = 1.5;
+print(value.clamp(0.0, 1.0)); // 1.0
+```
+
+Here, `1.5` is greater than `1.0`, so it is reduced to `1.0`.
+
+$${\color{orange}Flutter\ Questions\ Answers}$$
+
 **Q: If we use `Provider.of` inside a `Consumer`, do we need to set `listen: false`? Why?**
 
 Yes. Because `Consumer` is already listening to the provider and rebuilding the widget. If you use `Provider.of(context)` without `listen: false`, it tries to listen again, which can cause unnecessary rebuilds or errors (like calling updates during build). Setting `listen: false (or using context.read)` avoids double listening and keeps the rebuild controlled.
