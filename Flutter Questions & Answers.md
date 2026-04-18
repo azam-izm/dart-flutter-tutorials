@@ -1,6 +1,12 @@
 <!-- 
 $${\color{orange}Flutter\ Questions\ Answers}$$
 -->
+**Q: If we use Provider.of inside a Consumer, do we need to set listen: false? Why?**
+
+Yes. Because Consumer is already listening to the provider and rebuilding the widget. If you use Provider.of(context) without listen: false, it tries to listen again, which can cause unnecessary rebuilds or errors (like calling updates during build). Setting listen: false (or using context.read) avoids double listening and keeps the rebuild controlled.
+
+$${\color{orange}Flutter\ Questions\ Answers}$$
+
 **Q: What are the SOLID principles, and why are they important in software development?**
 
 SOLID is an acronym for five different principles. It is a set of object-oriented class design principles that provide rules for writing classes in a way that makes the code more readable, understandable, and testable.
