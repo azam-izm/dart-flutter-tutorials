@@ -1,9 +1,9 @@
 <!-- 
 $${\color{orange}Flutter\ Questions\ Answers}$$
 -->
-**Q: If we use Provider.of inside a Consumer, do we need to set listen: false? Why?**
+**Q: If we use `Provider.of` inside a `Consumer`, do we need to set `listen: false`? Why?**
 
-Yes. Because Consumer is already listening to the provider and rebuilding the widget. If you use Provider.of(context) without listen: false, it tries to listen again, which can cause unnecessary rebuilds or errors (like calling updates during build). Setting listen: false (or using context.read) avoids double listening and keeps the rebuild controlled.
+Yes. Because `Consumer` is already listening to the provider and rebuilding the widget. If you use `Provider.of(context)` without `listen: false`, it tries to listen again, which can cause unnecessary rebuilds or errors (like calling updates during build). Setting `listen: false (or using context.read)` avoids double listening and keeps the rebuild controlled.
 
 $${\color{orange}Flutter\ Questions\ Answers}$$
 
